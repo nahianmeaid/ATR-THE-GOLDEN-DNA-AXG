@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Axetron Gaming - ATR</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #f5f5f5;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #000;
+      border-bottom: 1px solid #f1c40f;
+    }
+
+    header img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      color: #f1c40f;
+      font-size: 24px;
+    }
+
+    nav {
+      background-color: #000;
+      padding: 15px 40px;
+      border-bottom: 1px solid #f1c40f;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #f1c40f;
+      font-weight: bold;
+      font-size: 16px;
+      position: relative;
+    }
+
+    nav ul li a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background-color: #f1c40f;
+      transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 80vh;
+      background: url('atr.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .banner::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .banner-content {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      animation: fadeInUp 1.5s ease-out;
+    }
+
+    .banner-content h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .banner-content p {
+      font-size: 20px;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #f1c40f;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .card, .trophies .card, .creators .card, .partners .card {
+      background-color: #111;
+      border: 1px solid #f1c40f33;
+      border-radius: 12px;
+      padding: 15px;
+      margin: 10px;
+      display: inline-block;
+      width: 250px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .video iframe {
+      width: 90%;
+      height: 400px;
+      border-radius: 10px;
+    }
+
+    .social a {
+      display: inline-block;
+      margin: 10px;
+      color: #f1c40f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .main-footer {
+      background: #000;
+      padding: 20px;
+      text-align: center;
+      border-top: 1px solid #f1c40f;
+    }
+
+    .main-footer p {
+      color: #ccc;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .banner-content h1 {
+        font-size: 32px;
+      }
+
+      .banner-content p {
+        font-size: 16px;
+      }
+
+      .video iframe {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="atr.png" alt="ATR Logo">
+    <h1>AXETRON GAMING</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="legacy.html">Our Legacy</a>
+      <li><a href="feed.html">Esports Feed</a>
+      <li><a href="teams.html">Esports Teams</a>
+      <li><a href="trophies.html">Trophies & Titles</a>
+      <li><a href="partners.html">Partners</a>
+      <li><a href="contact.html">Contact</a>
+    </ul>
+  </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #0a0a0a;
+      font-family: 'Segoe UI', sans-serif;
+      color: #f5f5f5;
+      margin: 0;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background: #000;
+      border-bottom: 1px solid #f1c40f33;
+    }
+
+    header h1 {
+      color: #f1c40f;
+    }
+
+    .hero {
+      background: url('contact-bg.jpg') center/cover no-repeat;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      top: 0; left: 0;
+    }
+
+    .hero h2 {
+      position: relative;
+      color: #f1c40f;
+      font-size: 36px;
+      z-index: 1;
+      animation: dropIn 1.2s ease;
+    }
+
+    @keyframes dropIn {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #111;
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid #f1c40f22;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      background: #222;
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+    }
+
+    .contact-form button {
+      padding: 10px 20px;
+      background: #f1c40f;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      border-top: 1px solid #f1c40f33;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h2>Contact Us</h2>
+  </section>
+
+  <div class="contact-form">
+    <input type="text" placeholder="Your Name" />
+    <input type="email" placeholder="Your Email" />
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button>Send Message</button>
+  </div>
+
+  <footer>&copy; 2025 Axetron Gaming</footer>
+
+</body>
+</html>

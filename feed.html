@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Axetron Gaming - ATR</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #f5f5f5;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #000;
+      border-bottom: 1px solid #f1c40f;
+    }
+
+    header img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      color: #f1c40f;
+      font-size: 24px;
+    }
+
+    nav {
+      background-color: #000;
+      padding: 15px 40px;
+      border-bottom: 1px solid #f1c40f;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #f1c40f;
+      font-weight: bold;
+      font-size: 16px;
+      position: relative;
+    }
+
+    nav ul li a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background-color: #f1c40f;
+      transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 80vh;
+      background: url('atr.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .banner::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .banner-content {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      animation: fadeInUp 1.5s ease-out;
+    }
+
+    .banner-content h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .banner-content p {
+      font-size: 20px;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #f1c40f;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .card, .trophies .card, .creators .card, .partners .card {
+      background-color: #111;
+      border: 1px solid #f1c40f33;
+      border-radius: 12px;
+      padding: 15px;
+      margin: 10px;
+      display: inline-block;
+      width: 250px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .video iframe {
+      width: 90%;
+      height: 400px;
+      border-radius: 10px;
+    }
+
+    .social a {
+      display: inline-block;
+      margin: 10px;
+      color: #f1c40f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .main-footer {
+      background: #000;
+      padding: 20px;
+      text-align: center;
+      border-top: 1px solid #f1c40f;
+    }
+
+    .main-footer p {
+      color: #ccc;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .banner-content h1 {
+        font-size: 32px;
+      }
+
+      .banner-content p {
+        font-size: 16px;
+      }
+
+      .video iframe {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="atr.png" alt="ATR Logo">
+    <h1>AXETRON GAMING</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="legacy.html">Our Legacy</a>
+      <li><a href="feed.html">Esports Feed</a>
+      <li><a href="teams.html">Esports Teams</a>
+      <li><a href="trophies.html">Trophies & Titles</a>
+      <li><a href="partners.html">Partners</a>
+      <li><a href="contact.html">Contact</a>
+    </ul>
+  </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Esports Feed - Axetron</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+    }
+
+    header {
+      background: #000;
+      color: #f1c40f;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #f1c40f33;
+    }
+
+    header img {
+      height: 40px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px 20px;
+      background: linear-gradient(120deg, #000, #1a1a1a);
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      color: #f1c40f;
+    }
+
+    .feed-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .feed-item {
+      background: #111;
+      border-left: 4px solid #f1c40f;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s ease;
+    }
+
+    .feed-item:hover {
+      background: #1c1c1c;
+    }
+
+    .feed-item h3 {
+      margin-top: 0;
+      color: #f1c40f;
+    }
+
+    .feed-item p {
+      color: #ccc;
+      font-size: 15px;
+    }
+
+    .timestamp {
+      font-size: 13px;
+      color: #888;
+      margin-top: 10px;
+    }
+
+    footer {
+      background: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #f1c40f33;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>🎮 Esports Feed</h1>
+    <p>Axetron Gaming – News & Announcements</p>
+  </section>
+
+  <div class="feed-container">
+
+    <style>
+      .news-thumbnail {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        display: block;
+      }
+      .feed-item {
+        margin-bottom: 40px;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
+      @media (max-width: 600px) {
+        .news-thumbnail {
+          max-width: 100%;
+        }
+        .feed-item {
+          padding: 15px;
+        }
+      }
+    </style>
+    
+    <div class="feed-item">
+      <img src="2may.jpeg" alt="PMNC Invite" class="news-thumbnail" />
+      <h3>🌟 PMNC Spring 2025 – Axetron Gets Direct Quarterfinals Invite</h3>
+      <p>PUBG Mobile Bangladesh Official has awarded Axetron Gaming a direct entry into the Quarter Finals of PMNC Bangladesh 2025, recognizing their championship win at the PUBG Mobile Global Open 2025 Asia Finals.</p>
+      <div class="timestamp">May 2, 2025</div>
+    </div>
+    
+    <div class="feed-item">
+      <img src="7april.jpeg" alt="PMRC Invite" class="news-thumbnail" />
+      <h3>🌐 Bangladeshi Audience – The True Champions of ESTN Fan Battle!</h3>
+      <p>The Bangladeshi audience In this fan-fev competition, showed their unwavering support led us past some of the region’s strongest fan-favorite teams: VD in the Round of 32, Pakistan’s giants squad like 4T, and even DRS Gaming The strongest fan fev team in south Asia was destroyed by our audience support . In the semifinals, they made the impossible happen — defeating Agon i8 on their own home ground.
+
+       Our bangladeshi supporters showed their prime version & make it happen to Make the finals between two Bangladeshi teams by destroying all others region .❤️</p>
+      <div class="timestamp">April 7 2025</div>
+    </div>
+    
+    <div class="feed-item">
+      <img src="march2025.jpeg" alt="Fan Battle Finals" class="news-thumbnail" />
+      <h3>❤️ Axetron Gaming got the invitation for PUBG Mobile Regional Clash 2025</h3>
+      <p>The champions continue to rise! PUBG Mobile officials have officially invited the Asian champion Storm Axetron to participate in the prestigious PUBG Mobile Regional Clash (PMRC) 2025: SA vs SEA vs GLOBAL CHAMPION</p>
+      <div class="timestamp">March 25, 2025</div>
+    </div>
+  
+    
+
+
+    
+      
+    <div class="feed-item">
+      <h3>💔 PMGO Main Event Missed Due to Visa Issues</h3>
+      <p>Despite being Asian champions, ATR fails to attend PMGO Main Event in Uzbekistan due to visa complications. A painful loss for the team and their supporters.</p>
+      <div class="timestamp">March 18, 2025</div>
+    </div>
+    
+    <div class="feed-item">
+      <h3>🔁 Electro Returns – The Reunion Begins</h3>
+      <p>After 28 days apart, Electro rejoins the squad. The journey toward greater heights resumes.</p>
+      <div class="timestamp">March 12, 2025</div>
+    </div>
+    
+    <div class="feed-item">
+      <h3>🤝 Media Expansion – CS6 Esports Joins</h3>
+      <p>To strengthen content and media presence, CS6 Esports officially partners with Axetron Gaming.</p>
+      <div class="timestamp">March 8, 2025</div>
+    </div>
+    
+    <div class="feed-item">
+      <h3>🏆 PMGO Asia Champions – We Go Global!</h3>
+      <p>Axetron wins PMGO Asia Finals and earns their slot for the global stage in Uzbekistan, becoming true giants of the Asian scene.</p>
+      <div class="timestamp">March 3, 2025</div>
+    </div>
+    
+    <div class="feed-item">
+      <h3>🥇 ESS Khulna LAN Champions</h3>
+      <p>After multiple close calls, Axetron finally claims a major LAN victory & gets touch of their deserving trophy through the best LAN event ever in BD till date – proving their dominance offline as well.</p>
+      <div class="timestamp">February 11, 2025</div>
+    </div>
+    
+    <div class="feed-item">
+      <h3>🔥 3x Champions – Dominating Start to 2025</h3>
+      <p>ATR secures three consecutive championship titles, showing peak form with the complete lineup.</p>
+      <div class="timestamp">Early 2025</div>
+    </div>
+    
+    <div class="feed-item">
+      <h3>🛬 6nin3 Joins ATR – A Veteran Support Arrives</h3>
+      <p>With PMGC-level experience, 6nin3 enhances the team’s support capabilities and overall chemistry.</p>
+      <div class="timestamp">December 10, 2024</div>
+    </div>
+    
+    <div class="feed-item">
+      <h3>🧠 New IGL Joins to Complete the Roster</h3>
+      <p>Axetron fills its strategic gap with a mastermind IGL, bringing balance to the elite fragging squad. This inclusion allows the roster to be led under the mastermind leadership of Madcat.</p>
+      <div class="timestamp">November 27, 2024</div>
+    </div>
+    
+    <div class="feed-item">
+      <h3>😢 SK3TCH Announces Retirement from Esports</h3>
+      <p>A legendary fragger exits the scene. This shocking decision leaves fans and the community heartbroken.</p>
+      <div class="timestamp">November 14, 2024</div>
+    </div>
+    
+    <div class="feed-item">
+      <h3>👋 Farewell to the MR MVP – ATRxSteelshot Journey Ends Here</h3>
+      <p>With heartfelt emotions, Axetron bids farewell to Steelshot, one of its brightest stars.</p>
+      <div class="timestamp">November 4, 2024</div>
+    </div>
+    
+    <div class="feed-item">
+      <h3>⚠️ Scam Incident: Axetron Betrayed by TX Organization</h3>
+      <p>Collaboration partner TX Org (owned by Ayan Mahmud Shakib) is involved in a six-digit scam. Legal steps and investigations underway.</p>
+      <div class="timestamp">October 23, 2024</div>
+    </div>
+    
+    <div class="feed-item">
+      <h3>👑 THE Queens of Axetron Announced</h3>
+      <p>Trisha, Wanda, Botcake, Demesi, and Sidween form Axetron’s official female PUBG Mobile lineup.</p>
+      <div class="timestamp">October 22, 2024</div>
+    </div>
+    
+    <div class="feed-item">
+      <h3>💥 Axetron Dominates BD Tier 1 Series Season 2</h3>
+      <p>With a prize pool of 100K BDT per player, ATR claims a commanding victory.</p>
+      <div class="timestamp">July 27, 2024</div>
+    </div>
+    
+    <div class="feed-item">
+      <h3>🎯 MAMBA GAMING Joins as ATRxMAMBA20</h3>
+      <p>Another elite fragger, Mamba, is added to the roster, completing the ultimate Bangladeshi powerhouse.</p>
+      <div class="timestamp">July 14, 2024</div>
+    </div>
+    
+    <div class="feed-item">
+      <h3>🔁 Hitman Joins ATR on Loan from A1 Esports</h3>
+      <p>To strengthen the national team, Hitman is loaned to Axetron for the World Esports Championship 2024.</p>
+      <div class="timestamp">June 2024</div>
+    </div>
+    
+    <div class="feed-item">
+      <h3>🏆 ATR Crowned Champions of IESF Bangladesh Region</h3>
+      <p>Axetron Gaming will now represent Bangladesh at the global stage of the IESF World Esports Championship 2024.</p>
+      <div class="timestamp">May 13, 2024</div>
+    </div>
+    
+    <div class="feed-item">
+      <h3>🔥 INTRODUCING THE NEW POWERHOUSE – ATRxSK3TCH</h3>
+      <p>The Axetron lineup is further empowered with the inclusion of Bangladesh’s finest, SK3TCH.</p>
+      <div class="timestamp">April 19, 2024</div>
+    </div>
+    
+    <div class="feed-item">
+      <h3>💪 Axetron Defeats A1 in Invitational TDM Battle (40–26)</h3>
+      <p>A dominant victory marks Axetron’s presence in the house TDM battles.</p>
+      <div class="timestamp">April 3, 2024</div>
+    </div>
+    
+    <div class="feed-item">
+      <h3>🎮 Grand Finals Begin – OBxAxetron Invitational</h3>
+      <p>Finals action for the Invitational kicks off with top contenders from Bangladesh battling for glory.</p>
+      <div class="timestamp">March 31, 2024</div>
+    </div>
+    
+    <div class="feed-item">
+      <h3>📢 New Tournament Announced – OBxAxetron Invitational: Battle Mania S1</h3>
+      <p>Axetron partners with OB to host the first season of the highly competitive Battle Mania Invitational.</p>
+      <div class="timestamp">March 17, 2024</div>
+    </div>
+    
+    <div class="feed-item">
+      <h3>🆕 A New Sensation Joins – Welcome 9TDEGREE</h3>
+      <p>9TDEGREE becomes a part of the Axetron roster, bringing fresh energy and gameplay mastery.</p>
+      <div class="timestamp">March 8, 2024</div>
+    </div>
+    
+    <div class="feed-item">
+      <h3>👑 ATR Welcomes the MVP of Bangladesh – Steelshot Gaming</h3>
+      <p>Axetron proudly brings on board one of the top-tier fraggers in Bangladesh, Steelshot Gaming, strengthening the lineup with pure firepower.</p>
+      <div class="timestamp">March 2, 2024</div>
+    </div>
+    <!-- More feed items can go here -->
+
+  </div>
+
+  <footer>
+    &copy; 2025 Axetron Gaming — All Rights Reserved.
+  </footer>
+
+</body>
+</html>
